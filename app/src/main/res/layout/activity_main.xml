@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lolliapp.opencvtemplate.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/fake_toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Computer Vision Demo"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/title"
+            android:layout_marginTop="2dp"
+            android:text="OpenCV Dependency"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/about_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="ABOUT"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/camera_container"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/fake_toolbar_container"
+        android:background="#FF000000"
+        android:padding="8dp">
+
+        <org.opencv.android.JavaCameraView
+            android:id="@+id/ocv_camera_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            opencv:camera_id="any"
+            opencv:paddingEnd="0dp"
+            opencv:paddingStart="0dp"
+            opencv:show_fps="true" />
+
+        <ImageView
+            android:id="@+id/switch_camera_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_switch_camera" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/controls_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/camera_container"
+        android:background="#FF000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/mode_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF000000"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <TextView
+                    android:id="@+id/edge_detector_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="Edge Detector"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/face_detector_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="Face Detector"
+                    android:textColor="#FFFFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rotation_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF000000"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <TextView
+                    android:id="@+id/rotation_degrees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFFFF" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/rotate_ccw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_selector"
+                    android:text="+90\u00B0"
+                    android:textColor="#FFFFFFFF" />
+
+                <Button
+                    android:id="@+id/rotate_cw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/btn_selector"
+                    android:text="-90\u00B0"
+                    android:textColor="#FFFFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/canny_value_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF000000"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/canny_threshold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFFFF" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/inc_canny_threshold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_selector"
+                    android:text="+10"
+                    android:textColor="#FFFFFFFF" />
+
+                <Button
+                    android:id="@+id/dec_canny_threshold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/btn_selector"
+                    android:text="-10"
+                    android:textColor="#FFFFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/about_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/fake_toolbar_container"
+        android:background="#cc8fa0ff"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/license"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
