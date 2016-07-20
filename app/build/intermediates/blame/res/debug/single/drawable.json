@@ -12,20 +12,20 @@
         "source": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_dialog_material_background_light.xml"
     },
     {
-        "merged": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_switch_camera.png",
-        "source": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\src\\main\\res\\drawable\\ic_switch_camera.png"
-    },
-    {
         "merged": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
         "source": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_selector.xml",
-        "source": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\src\\main\\res\\drawable\\btn_selector.xml"
+        "merged": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_switch_camera.png",
+        "source": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\src\\main\\res\\drawable\\ic_switch_camera.png"
     },
     {
         "merged": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
         "source": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_selector.xml",
+        "source": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\src\\main\\res\\drawable\\btn_selector.xml"
     },
     {
         "merged": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
@@ -56,20 +56,20 @@
         "source": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
-        "merged": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
-    },
-    {
         "merged": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
         "source": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
-        "merged": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_unpressed.xml",
-        "source": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\src\\main\\res\\drawable\\btn_unpressed.xml"
+        "merged": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
         "merged": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
         "source": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_unpressed.xml",
+        "source": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\src\\main\\res\\drawable\\btn_unpressed.xml"
     },
     {
         "merged": "C:\\Users\\Richard\\Desktop\\OpenCVTemplate\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
